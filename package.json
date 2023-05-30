@@ -23,17 +23,23 @@
   },
   "homepage": "https://github.com/awslabs/aws-lex-web-ui#readme",
   "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev-vue": "vue-cli-service serve",
     "build-prod": "webpack --mode production --env production",
     "build-dev": "webpack --mode development --hide-modules",
     "build": "npm run build-dev && npm run build-prod",
     "dev": "webpack-dev-server --mode development  --hot",
-    "lint": "eslint --format node_modules/eslint-formatter-friendly src/lex-web-ui-loader"
+    "lint": "eslint --format node_modules/eslint-formatter-friendly src/lex-web-ui-loader",
+    "webpack-defaults": "webpack-defaults"
   },
   "dependencies": {
+    "@vue/cli-service": "^5.0.8",
     "amazon-cognito-auth-js": "^1.2.4",
+    "cli-service": "^0.0.2",
     "core-js": "^3.6.5",
     "jsonwebtoken": "^9.0.0",
-    "regenerator-runtime": "^0.13.5"
+    "regenerator-runtime": "^0.13.5",
+    "vue-cli": "^2.9.6"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
